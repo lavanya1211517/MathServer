@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Math</title>
+    </head>
+    <body>
+        <h1>LAVANYA V (26009527)</h1>
+        <h2>CHURN RATE CALCULATON</h2>
+
+        <form method="POST">
+          {% csrf_token %}
+            
+            <label>Customers lost count:</label>
+            <input type="number"  value="{{ Customers_count }}" name="length">
+            <br><br>
+            
+            <label>Initial Customers count:</label>
+            <input type="number"  value="{{ Initial_Customer }}" name="breadth">
+            <br><br>
+            
+            <input type="submit" value="calculate">
+            <br><br>
+            
+            <label>Churn Rate count:</label>
+            <input type="number"  value="{{ area }}" >
+        </form>
+    </body>
+</html>
